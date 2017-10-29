@@ -10,3 +10,16 @@
    /* inline-block space fix */
    margin-right:-4px;
 }
+
+.head-shot {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	height:700px;
+	padding-bottom:50px;
+	padding-top:50px;
+}
+
+.header {
+	padding-left:50px;
+}
