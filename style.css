@@ -16,10 +16,16 @@
 	margin-left:auto;
 	margin-right:auto;
 	height:700px;
-	padding-bottom:50px;
+	padding-bottom:10px;
 	padding-top:50px;
 }
 
 .header {
 	padding-left:50px;
+}
+
+.name-caption {
+	text-align:center;
+	font-family:"Times New Roman", Times, serif;
+	font-size:30px;
 }
