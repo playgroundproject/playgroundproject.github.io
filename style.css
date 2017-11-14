@@ -27,3 +27,35 @@ html {
   box-shadow: inset 0 -19px 0 #d3e9e1;
   margin-bottom: -5px;
 }
+
+/* centered columns styles */
+.row-centered {
+   text-align:center;
+}
+.col-centered {
+   display:inline-block;
+   float:none;
+   /* reset the text-align */
+   text-align:left;
+   /* inline-block space fix */
+   margin-right:-4px;
+}
+
+.head-shot {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	height:700px;
+	padding-bottom:10px;
+	padding-top:50px;
+}
+
+.header {
+	padding-left:50px;
+}
+
+.name-caption {
+	text-align:center;
+	font-family:"Times New Roman", Times, serif;
+	font-size:30px;
+}
