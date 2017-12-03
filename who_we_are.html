@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
+
   <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
@@ -36,8 +37,14 @@
 
 <!-- First row of pictures-->
   <div class="row">
-    <div class="col-sm name-caption"> <img class="head-shot" src="images/member_pictures/alex.jpg"> <p> Alex Castillo </p> </div>
-    <div class="col-sm name-caption"> <img class="head-shot" src="images/member_pictures/charles.jpg"> <p> Charles Chierico </p> </div>
+    <div class="col-sm name-caption"> <input type="image" class="head-shot" src="images/member_pictures/alex.jpg" id="memberBtn1" >
+     <p> Alex Castillo </p>
+     </div>
+
+       
+    <div class="col-sm name-caption"> <input type="image" class="head-shot" src="images/member_pictures/charles.jpg" id="memberBtn2" > <p> Charles Chierico </p> </div>
+
+
     <div class="col-sm name-caption"> <img class="head-shot" src="images/member_pictures/durward.jpg"> <p> Durward Benham </p> </div>
   </div>
 <!-- Second row of pictures -->
@@ -61,10 +68,22 @@
   </div>
 
 
+
+
 </div> 
 
-  
 
+<!--Member bio information -->
+  <button id="memberBtn1">Member 1</button>
+  <div id="myModal" class="modal">
+    <div class = "modal-content">
+      <span class="close">&times;</span>
+      <p> Alex Castillo is a third year student from Huntington, New York and is enrolled in the D’Amore McKim School of Business at Northeastern. An MIS and Entrepreneurship major, Alex hopes to one day start his own online business. He is currently an undergraduate manager for the Northeastern men’s basketball team and is searching for his second co-op. In his free time, Alex enjoys playing basketball, volunteering, running, and skiing.</p>
+    </div>
+  </div>
+
+<script src="member_popup.js"> </script>
+  
   </body>
 </html>
 
