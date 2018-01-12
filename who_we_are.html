@@ -63,34 +63,28 @@
 
 <!-- First row of pictures-->
   <div class="row">
-    <div class="col-sm name-caption"> <input type="image" class="head-shot" src="images/member_pictures/alex.jpg" id="memberBtn1" >
-     <p> Alex Castillo </p>
-     </div>
-
-
-    <div class="col-sm name-caption"> <input type="image" class="head-shot" src="images/member_pictures/charles.jpg" id="memberBtn2" > <p> Charles Chierico </p> </div>
-
-
-    <div class="col-sm name-caption"> <img class="head-shot" src="images/member_pictures/durward.jpg"> <p> Durward Benham </p> </div>
+    <div class="col-sm name-caption"> <input type="image" class="head-shot" src="images/member_pictures/durward.jpg" id="Durward" onclick="clickImage(this.id)"> <p> Durward Benham </p> </div>
+    <div class="col-sm name-caption"> <input type="image" class="head-shot" src="images/member_pictures/maria.jpg" id="Maria" onclick="clickImage(this.id)"> <p> Maria Bermudez </p> </div>
+    <div class="col-sm name-caption"> <input type="image" class="head-shot" src="images/member_pictures/laura.jpg" id="Laura" onclick="clickImage(this.id)"> <p> Laura Blumenfeld </p> </div>
   </div>
 <!-- Second row of pictures -->
   <div class="row">
-    <div class="col-sm name-caption"> <img class="head-shot" src="images/member_pictures/durward.jpg"> <p> Durward Benham </p> </div>
-    <div class="col-sm name-caption"> <img class="head-shot" src="images/member_pictures/elise.jpg"> <p> Elise Dovletoglou </p> </div>
-    <div class="col-sm name-caption"> <img class="head-shot" src="images/member_pictures/hayden.jpg"> <p> Hayden Henderson </p> </div>
+    <div class="col-sm name-caption"> <input type="image" class="head-shot" src="images/member_pictures/alex.jpg" id="Alex" onclick="clickImage(this.id)"><p> Alex Castillo </p></div>
+    <div class="col-sm name-caption"> <input type="image" class="head-shot" src="images/member_pictures/charles.jpg" id="Charles" onclick="clickImage(this.id)"> <p> Charles Chierico </p> </div>
+    <div class="col-sm name-caption"> <input type="image" class="head-shot" src="images/member_pictures/elise.jpg" id="Elise" onclick="clickImage(this.id)"> <p> Elise Dovletoglou </p> </div>
   </div>
 <!-- Third row of pictures -->
   <div class="row">
-    <div class="col-sm name-caption"> <img class="head-shot" src="images/member_pictures/laura.jpg"> <p> Laura Blumenfeld </p> </div>
-    <div class="col-sm name-caption"> <img class="head-shot" src="images/member_pictures/maria.jpg"> <p> Maria Bermudez </p> </div>
-    <div class="col-sm name-caption"> <img class="head-shot" src="images/member_pictures/mariya.jpg"> <p> Mariya Lupandina </p> </div>
+    <div class="col-sm name-caption"> <input type="image" class="head-shot" src="images/member_pictures/hayden.jpg" id="Hayden" onclick="clickImage(this.id)"> <p> Hayden Henderson </p> </div>
+    <div class="col-sm name-caption"> <input type="image" class="head-shot" src="images/member_pictures/mariya.jpg" id="Mariya" onclick="clickImage(this.id)"> <p> Mariya Lupandina </p> </div>
+    <div class="col-sm name-caption"> <input type="image" class="head-shot" src="images/member_pictures/durward.jpg" id="Daniel" onclick="clickImage(this.id)"> <p> Daniel Ostberg </p> </div>
   </div>
 
 <!--Fourth row of pictures -->
   <div class="row">
-    <div class="col-sm name-caption"> <img class="head-shot" src="images/member_pictures/max.jpg"> <p> Max Sminkey </p> </div>
-    <div class="col-sm name-caption"> <img class="head-shot" src="images/member_pictures/monisha.png"> <p> Monisha Reginald </p> </div>
-    <div class="col-sm name-caption"> <img class="head-shot" src="images/member_pictures/tia.jpg"> <p> Tia Thomson </p> </div>
+    <div class="col-sm name-caption"> <input type="image" class="head-shot" src="images/member_pictures/monisha.png" id="Monisha" onclick="clickImage(this.id)"> <p> Monisha Reginald </p> </div>
+    <div class="col-sm name-caption"> <input type="image" class="head-shot" src="images/member_pictures/max.jpg" id="Max" onclick="clickImage(this.id)"> <p> Max Sminkey </p> </div>
+    <div class="col-sm name-caption"> <input type="image" class="head-shot" src="images/member_pictures/tia.jpg" id="Tia" onclick="clickImage(this.id)"> <p> Tia Thomson </p> </div>
   </div>
 
 
@@ -100,11 +94,10 @@
 
 
 <!--Member bio information -->
-  <button id="memberBtn1">Member 1</button>
   <div id="myModal" class="modal">
     <div class = "modal-content">
       <span class="close">&times;</span>
-      <p> Alex Castillo is a third year student from Huntington, New York and is enrolled in the D’Amore McKim School of Business at Northeastern. An MIS and Entrepreneurship major, Alex hopes to one day start his own online business. He is currently an undergraduate manager for the Northeastern men’s basketball team and is searching for his second co-op. In his free time, Alex enjoys playing basketball, volunteering, running, and skiing.</p>
+      <p id="modalText"></p>
     </div>
   </div>
 
