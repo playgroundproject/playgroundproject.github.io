@@ -48,9 +48,9 @@ img {
 
 .head-shot {
 	display:block;
-	margin-left:auto;
+  margin-left:auto;
 	margin-right:auto;
-	height:700px;
+  height:700px;
 	padding-bottom:10px;
 	padding-top:50px;
 }
