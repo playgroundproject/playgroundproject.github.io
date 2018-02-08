@@ -1,0 +1,401 @@
+#header {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 15%;
+  width: 80%;
+}
+
+#sidebar {
+  float: left;
+  width: 15%;
+  font-size: 20px;
+}
+
+#sidebar ul {
+  list-style-type: none;
+}
+
+.list {
+  padding-left: 40px;
+}
+
+.not-current {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  transition: color .5s ease, padding-left .5s ease;
+}
+
+.not-current::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  background-color: transparent;
+  transition: width .5s ease, background-color .5s ease, color .5s ease;
+}
+
+.not-current:hover:after {
+  width: 100%;
+  background-color: indigo;
+}
+
+.not-current:hover {
+  color: indigo;
+  padding-left: 20px;
+}
+
+.current {
+  text-decoration: none;
+  display: inline-block;
+  color: indigo;
+  padding-left: 20px;
+}
+
+.current::after {
+  content: '';
+  display: block;
+  background-color: indigo;
+  height: 3px;
+  width: 100%;
+}
+
+#body {
+  float: left;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.list p {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+body {
+  background-color: #EBEBEB;
+  color: #191818;
+  font-family: Lato, Helvetica, Arial;
+}
+
+text {
+  fill: darkgrey;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 36px;
+}
+
+strong {
+  color: indigo;
+  text-decoration: underline;
+}
+
+/*HTML Horizonal Legend*/
+.country-name {
+    margin: 0 !important;
+}
+.key-dot {
+    display: inline-block;
+    height: 10px;
+    margin-right: .5em;
+    width: 10px;
+}
+
+.uk { background: #1F77B4;}
+.denmark { background: #FF7F0E;}
+.germany { background: #2CA02C;
+}
+
+#legend2{
+    overflow:hidden;
+}
+.legend2 {
+    float:left;
+    margin-right: 1em;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+/* Bootstrap modifications */
+.card {
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #7D01D7;
+  border-color: #7D01D7;
+}
+
+.btn-primary:hover {
+  background-color: indigo;
+  border-color: indigo;
+}
+
+/* Bar Chart Legends */
+/* basic positioning */
+.legends {
+  margin-bottom: 40px;
+}
+.legend {
+  list-style: none;
+  margin: auto;
+  width: 40%;
+}
+
+.legend li {
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.legend span {
+  float: left;
+  width: 12px;
+  height: 12px;
+  margin: 2px;
+}
+/* colors */
+.legend .superawesome { background-color: #CC1F14; }
+.legend .awesome { background-color: #FEC92E; }
+.legend .kindaawesome { background-color: #82B75E; }
+
+/* Sidebar */
+/*
+Add transition to containers so they can push in and out.
+*/
+#layout,
+#menu,
+.menu-link {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+/*
+This is the parent `<div>` that contains the menu and the content area.
+*/
+    #menu.active {
+        left: 150px;
+    }
+    #menuLink.active {
+        left: 150px;
+    }
+
+    #layout.active .menu-link {
+        left: 150px;
+    }
+/*
+The content `<div>` is where all your content goes.
+*/
+.content {
+    margin: 0 auto;
+    padding: 0 2em;
+    max-width: 800px;
+    margin-bottom: 50px;
+    line-height: 1.6em;
+}
+
+.header {
+     margin: 0;
+     color: #333;
+     text-align: center;
+     padding: 2.5em 2em 0;
+     border-bottom: 1px solid #eee;
+ }
+    .header h1 {
+        margin: 0.2em 0;
+        font-size: 3em;
+        font-weight: 300;
+    }
+     .header h2 {
+        font-weight: 300;
+        color: #ccc;
+        padding: 0;
+        margin-top: 0;
+    }
+
+.content-subhead {
+    margin: 50px 0 20px 0;
+    font-weight: 300;
+    color: #888;
+}
+
+
+
+/*
+The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
+appears on the left side of the page.
+*/
+
+#menu {
+    margin-left: -150px; /* "#menu" width */
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000; /* so the menu or its navicon stays above all content */
+    background: #191818;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+    /*
+    All anchors inside the menu should be styled like this.
+    */
+    #menu a {
+        color: #999;
+        border: none;
+        padding: 0.6em 7em 0.6em 0.6em;
+    }
+
+    /*
+    Remove all background/borders, since we are applying them to #menu.
+    */
+     #menu .pure-menu,
+     #menu .pure-menu ul {
+        border: none;
+        background: transparent;
+        margin-top: 70px;
+    }
+
+    /*
+    Add that light border to separate items into groups.
+    */
+    #menu .pure-menu ul,
+    #menu .pure-menu .menu-item-divided {
+        border-top: 1px solid #333;
+        list-style: none;
+        margin-left: -40px;
+    }
+        /*
+        Change color of the anchor links on hover/focus.
+        */
+        #menu .pure-menu li a:hover,
+        #menu .pure-menu li a:focus {
+            background: indigo;
+            text-decoration: none;
+        }
+
+    /*
+    This styles the selected menu item `<li>`.
+    */
+    #menu .pure-menu-selected,
+    #menu .pure-menu-heading {
+        background: #1f8dd6;
+    }
+        /*
+        This styles a link within a selected menu item `<li>`.
+        */
+        #menu .pure-menu-selected a {
+            color: #fff;
+        }
+
+    /*
+    This styles the menu heading.
+    */
+    #menu .pure-menu-heading {
+        font-size: 110%;
+        color: #fff;
+        margin: 0;
+    }
+
+    .pure-menu-item {
+      padding: 0.6em 0em 0.6em 0em;
+    }
+
+    .pure-menu-item#active {
+      background: indigo;
+    }
+
+/* -- Dynamic Button For Responsive Menu -------------------------------------*/
+
+/*
+The button to open/close the Menu is custom-made and not part of Pure. Here's
+how it works:
+*/
+
+/*
+`.menu-link` represents the responsive menu toggle that shows/hides on
+small screens.
+*/
+.menu-link {
+    position: fixed;
+    display: block; /* show this only on small screens */
+    top: 0;
+    left: 0; /* "#menu width" */
+    background: #000;
+    background: rgba(0,0,0,0.7);
+    font-size: 10px; /* change this value to increase/decrease button size */
+    z-index: 10;
+    height: auto;
+    padding: 2.1em 1.6em;
+}
+
+    .menu-link:hover,
+    .menu-link:focus {
+        background: #000;
+    }
+
+    .menu-link .span {
+        position: relative;
+        display: block;
+    }
+
+    .menu-link .span {
+      width: 30px;
+      height: 3px;
+      background-color: #EBEBEB;
+      margin: 6px 0;
+    }
+
+
+/* -- Responsive Styles (Media Queries) ------------------------------------- */
+
+/*
+Hides the menu at `48em`, but modify this based on your app's needs.
+*/
+@media (min-width: 48em) {
+
+    #body {
+      width: 80%;
+    }
+    .header,
+    .content {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    #menu {
+        left: 150px;
+    }
+
+    .menu-link {
+        position: fixed;
+        left: 150px;
+        display: none;
+    }
+
+    #layout.active .menu-link {
+        left: 150px;
+    }
+}
+
+@media (max-width: 48em) {
+    /* Only apply this when the window is small. Otherwise, the following
+    case results in extra padding on the left:
+        * Make the window small.
+        * Tap the menu to trigger the active state.
+        * Make the window large again.
+    */
+    #layout.active {
+        position: relative;
+        left: 150px;
+    }
+}
