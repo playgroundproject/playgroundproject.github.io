@@ -1,0 +1,55 @@
+<!doctype HTML>
+<html>
+  <head>
+    <title>Playground Scorecard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="sidebartoggle.js"></script>
+    <script>
+      function resizeIframe(obj) {
+        obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+      }
+    </script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script src="https://awesome-table.com/AwesomeTableInclude.js"></script>
+  </head>
+
+  <body>
+    <div id='header'>
+      <h1>The Playground Project: INDIGO Scorecard</h1>
+    </div>
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <div class="span"></div>
+        <div class="span"></div>
+        <div class="span"></div>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu">
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="index.html" class="pure-menu-link">Home</a></li>
+                <li class="pure-menu-item" id="active"><a href="results.html" class="pure-menu-link">Results</a></li>
+                <li class="pure-menu-item"><a href="map.html" class="pure-menu-link">Map</a></li>
+                <li class="pure-menu-item"><a href="report.html" class="pure-menu-link">Inights</a></li>
+                <li class="pure-menu-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLScBfHT2k3M76rTfy4FWeAPSuvX0orxMn_eZ4k1VC0oSN6MOGw/viewform" class="pure-menu-link">Scorecard</a></li>
+                <li class="pure-menu-item"><a href="http://playgroundprojectindigo.org/home/" class="pure-menu-link">Main Site</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="body">
+      <h1>Results Table</h1>
+      <p>The table below shows the playgrounds that have been rated so far and their scores (on a scale of 1 to 5, with 5 being the best) across various categories. You can click on any of the headers to sort and can filter by score or playground name. The table may take a few seconds to load initially.</p>
+
+      <!-- Place this tag where you want the Awesome Table Widget to render -->
+      <div data-type="AwesomeTableView" data-viewID="-KnBUfsmRyIgSs-UVkeP"></div>
+
+    </div>
+  </body>
+
+</html>
