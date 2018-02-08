@@ -138,6 +138,7 @@ img {
   padding-bottom:100px;
 }
 
+
 .headline {
   font: 54px Lora, serif;
   font-style: italic;
@@ -179,7 +180,26 @@ box-shadow: 20px 20px 0px 0px rgba(255,204,111,1);
 text-decoration: none;
 background: black;
 color:#C5E7DB;
-transition: 0.5s ease;
+transition: 0.3s ease;
+}
+
+.report-link-white {
+  font-family: Roboto;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px white solid;
+  color:white;
+  padding: 15px 25px;
+  letter-spacing: 2px;
+  margin:0 auto;
+  margin-bottom: 75px;
+}
+
+.report-link-white:hover {
+text-decoration: none;
+background: white;
+color:black;
+transition: 0.3s ease;
 }
 
 .footer-link {
@@ -189,4 +209,62 @@ transition: 0.5s ease;
 
 .footer-link:hover {
   color:#C5E7DB;
+}
+
+
+
+
+
+/*media queries*/
+/*xs*/
+@media screen and (max-width: 767px) {
+
+.body-content {
+  margin-left:10px;
+}
+
+
+.banner-long {
+    font: 22px Lora, serif;
+    font-style: italic;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding-top:50px;
+    padding-bottom:50px;
+  }
+}
+
+/*small*/
+@media screen and (min-width: 768px) {
+.banner-long {
+    font: 36px Lora, serif;
+    font-style: italic;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding-top:75px;
+    padding-bottom:75px;
+  }
+}
+
+/*med*/
+@media screen and (min-width: 992px) {
+  .banner-long {
+    font: 54px Lora, serif;
+    font-style: italic;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding-top:100px;
+    padding-bottom:50px;
+  }
+}
+
+/*lg*/
+@media screen and (min-width: 1200px) {
+
 }
