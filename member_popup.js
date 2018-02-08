@@ -64,7 +64,7 @@ function clickImage(clicked_id) {
       break;
   }
   document.getElementById('modalText').innerHTML = text;
-  document.getElementById('modalPic').innerHTML = picLink;
+  document.getElementById('modalPic').src = picLink;
   modal.style.display = "block";
 }
 
