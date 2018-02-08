@@ -47,7 +47,7 @@ function clickImage(clicked_id) {
       picLink= "images/member_pictures/mariya.jpg"
       break;
     case "Daniel":
-      text = "Dan needs to submit a bio.";
+      text = "Dan is a third year at Northeastern University pursuing a BS/MS in Chemical Engineering and a BS in Math. He is from Maumee, Ohio, and came to Boston in hopes of meeting Will Hunting. He is currently working at Doble Engineering as a chemist and has previously researched rapid bacterial detection systems on campus. Volunteer work at Squashbusters as a tutor for Boston middle schoolers led Dan to PPI, where he hopes to improve the play spaces for the children he has tutored for years.";
       picLink= "images/member_pictures/dan.jpg"
       break;
     case "Monisha":
