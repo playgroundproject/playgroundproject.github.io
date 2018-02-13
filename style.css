@@ -63,21 +63,23 @@ img {
 
 .head-shot {
 	display:block;
-  margin-left:auto;
-	margin-right:auto;
-  height:600px;
-	padding-bottom:10px;
-	padding-top:50px;
+  width:90%;
+  margin-bottom:15px;
+  margin-top:50px;
 }
 
-.header {
-	padding-left:50px;
+.head-shot:hover {
+  -moz-box-shadow: 10px 10px 0px #B4DACD;
+  -webkit-box-shadow: 10px 10px 0px #B4DACD;
+  box-shadow: 10px 10px 0px #B4DACD;
 }
+
+
 
 .name-caption {
 	text-align:center;
-	font-family:"Times New Roman", Times, serif;
-	font-size:30px;
+	font: 20px Roboto, serif;
+  padding-right:30px;
 }
 
 /* The Modal (background) */
@@ -97,15 +99,30 @@ img {
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 5% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
 }
 
+
+#modalPic {
+  padding-top:50px;
+  padding-bottom:50px;
+  width:80%;
+  padding-left:5%;
+}
+
+#modalText {
+  padding-top:50px;
+  padding-right:5%;
+}
+
+
 /* The Close Button */
 .close {
     color: #aaa;
+    display: inline;
     float: right;
     font-size: 28px;
     font-weight: bold;
