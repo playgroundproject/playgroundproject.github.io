@@ -59,7 +59,7 @@ function clickImage(clicked_id) {
       picLink= "images/member_pictures/max.jpg"
       break;
     case "Tia":
-      text = "Tia Thomson is in her third year at Northeastern University pursuing a BFA in Design and minors in American Sign Language and Art History. She was born in Taiwan, but was raised in Orange County, California. She is passionate about making the world a better place through human-centered design. She is serving as a first-year peer mentor and as the Art+Design representative on the Student Advisory Board for the College of Arts, Media and Design. In her free time, she enjoys doing yoga and looking at photos of her fat chihuahua, Daisy.";
+      text = "Tia Thomson is in her third year at Northeastern University pursuing a BFA in Design and minors in American Sign Language and Art History. She is from Orange County, California, and spends 90% of the winter complaining about her decision to live somewhere where it hurts to exist outdoors. Tia is currently completing her first co-op at a design agency called iFactory, where she works on the user experience and information architecture team. She is also working on a service design research project with Professor Miso Kim on a creating funding platform for prison education. She serves as the Art+Design representative on the Student Advisory Board for the College of Arts, Media and Design, and she is deeply passionate about making the world a better place through human-centered design. In her free time, she enjoys doing yoga and looking at photos of her fat chihuahua, Daisy.";
       picLink= "images/member_pictures/tia.jpg"
       break;
   }
