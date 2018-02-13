@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 html {
   font-family: 'Roboto', sans-serif;
@@ -61,12 +62,6 @@ img {
     max-height: 100%;
 }
 
-.head-shot {
-	display:block;
-  width:90%;
-  margin-bottom:15px;
-  margin-top:50px;
-}
 
 .head-shot:hover {
   -moz-box-shadow: 10px 10px 0px #B4DACD;
@@ -78,7 +73,7 @@ img {
 
 .name-caption {
 	text-align:center;
-	font: 20px Roboto, serif;
+	font: 20px Roboto, sans-serif;
   padding-right:30px;
 }
 
@@ -99,23 +94,10 @@ img {
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto; /* 15% from the top and centered */
+    margin: 5% auto; /* 5% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
-
-
-#modalPic {
-  padding-top:50px;
-  padding-bottom:50px;
-  width:80%;
-  padding-left:5%;
-}
-
-#modalText {
-  padding-top:50px;
-  padding-right:5%;
+    width: 90%; /* Could be more or less, depending on screen size */
 }
 
 
@@ -315,10 +297,43 @@ transition: 0.3s ease;
   .stack-up {
     padding-top: 0px;
   }
+
+  .head-shot {
+  display:block;
+  width:100%;
+  margin-bottom:15px;
+  margin-top:50px;
+  }
+
+  .modal-pic {
+  padding-top:20px;
+  padding-bottom:10px;
+  width:100%;
+}
+
+.modal-text {
+  padding-top:10px;
+}
+
 }
 
 /*small*/
 @media screen and (min-width: 768px) {
+
+
+.modal-pic {
+  padding-top:20px;
+  padding-bottom:20px;
+  width:70%;
+  padding-left:30%;
+}
+
+.modal-text {
+  padding-top:10px;
+  padding-right:10%;
+  padding-left:10%;
+}
+
 
     .stack-up {
     padding-top: 20px;
@@ -381,11 +396,31 @@ transition: 0.3s ease;
   font: 54px Lora, serif;
   font-weight: 700;
 }
+
+.head-shot {
+  display:block;
+  width:90%;
+  margin-bottom:15px;
+  margin-top:50px;
+}
+
 }
 
 /*med*/
 @media screen and (min-width: 992px) {
-      .stack-up {
+  
+  .modal-pic {
+    padding-top:50px;
+    padding-bottom:50px;
+    width:100%;
+    padding-left:5%;
+  }
+
+  .modal-text {
+    padding-top:50px;
+  }
+
+   .stack-up {
     padding-top: 30px;
   }
 
@@ -439,6 +474,17 @@ transition: 0.3s ease;
 @media screen and (min-width: 1200px) {
       .stack-up {
     padding-top: 100px;
+  }
+
+    .modal-pic {
+    padding-top:50px;
+    padding-bottom:50px;
+    width:80%;
+    padding-left:10%;
+  }
+
+  .modal-text {
+    padding-top:50px;
   }
 
 }
