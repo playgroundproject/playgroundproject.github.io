@@ -156,10 +156,6 @@ img {
   padding-bottom: 100px;
 }
 
-.img-padding {
-    padding-left: 2vw;
-}
-
 .img-box-shadow {
   width:80%;
   -webkit-box-shadow: 20px 20px 0px 0px rgba(255,204,111,1);
@@ -315,6 +311,10 @@ transition: 0.3s ease;
   padding-top:10px;
 }
 
+.img-padding {
+    padding-left: 3%;
+}
+
 }
 
 /*small*/
@@ -404,6 +404,10 @@ transition: 0.3s ease;
   margin-top:50px;
 }
 
+.img-padding {
+    padding-left: 0;
+}
+
 }
 
 /*med*/
@@ -468,6 +472,10 @@ transition: 0.3s ease;
   .score-row {
     margin-top: 150px;
   }
+
+  .img-padding {
+    padding-left: 5%;
+}
 }
 
 /*lg*/
