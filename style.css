@@ -315,6 +315,10 @@ transition: 0.3s ease;
     padding-left: 3%;
 }
 
+.table {
+  width:100%;
+}
+
 }
 
 /*small*/
@@ -410,6 +414,10 @@ transition: 0.3s ease;
 
 }
 
+.table {
+  width:100%;
+}
+
 /*med*/
 @media screen and (min-width: 992px) {
   
@@ -476,6 +484,12 @@ transition: 0.3s ease;
   .img-padding {
     padding-left: 5%;
 }
+
+.table {
+  width:90%;
+  margin-left: 5%;
+}
+
 }
 
 /*lg*/
@@ -494,5 +508,11 @@ transition: 0.3s ease;
   .modal-text {
     padding-top:50px;
   }
+
+  .table {
+  width:80%;
+  margin-left: 10%;
+}
+
 
 }
